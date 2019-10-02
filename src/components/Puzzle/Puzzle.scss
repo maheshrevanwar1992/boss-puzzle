@@ -1,0 +1,58 @@
+.puzzle-wrapper {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+
+  .puzzle {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    .space {
+      display: flex;
+      flex: 1;
+      height: 100%;
+      border: 1px solid #D4D5DC;
+      background-color: #FFF;
+
+      .tile {
+        font-size: 36px;
+        background-color: #F0F3F7;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .winner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#35C066, 0.4);
+
+    .message {
+      animation: zoomInOut 1s infinite alternate;
+    }
+  }
+
+  @keyframes zoomInOut {
+    from {
+      font-size: 10px;
+    }
+
+    to {
+      font-size: 40px;
+    }
+  }
+}

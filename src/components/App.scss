@@ -1,0 +1,46 @@
+html, body, #root, .App {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #EFEFF1;
+  background-image: radial-gradient(rgba(164, 176, 188, 0.1) 15%, transparent 20%);
+  background-size: 20px 20px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+
+    h1 {
+      margin: 0;
+      color: #2171f4;
+    }
+
+    select {
+      width: 150px;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 2em;
+  background-color: #4EB5F1;
+  color: #FFF;
+  cursor: pointer;
+  user-select: none;
+}
